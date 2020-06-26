@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+
+   <title>Loan Quote Calculator</title>
+   <meta name="description" content="The Loan Quote Calculator">
+   <meta name="author" content="Gianluca Marino">
+
+   <link rel="icon" href="icons/favicon.ico"/>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type='text/javascript' src="js/site.js"></script>
+
+</head>
+
+<body>
+
+<h1>Loan Quote Calculator</h1>
+<p id='error' hidden></p>
+<button id="loan-button">Calculate Loan Quote</button>
+
+<div id="loan-form-div" hidden>
+   <form id='loan-form'>
+      <input type='text' name='loan' id='loan-amount'>
+      <input type='submit' value='Calculate Loan'>
+   </form>
+   <img id='spinner' class='spinner' src='/images/spinner.gif' alt='' hidden>
+</div>
+
+<div id="loan-result" hidden>
+   <pre id="output"></pre>
+</div>
+
+</body>
+<footer>
+   <p>Author: <em>Gianluca Marino</em></p>
+</footer>
+</html>
